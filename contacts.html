@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contacts.css">
+    <title>My Profile | Contacts</title>
+</head>
+
+<body>
+    <header>
+        <div class="left">
+            <div class="dot"></div>
+
+            <div class="title">
+                <div class="name">
+                    <a href="index.html">Aneek Das</a>
+                </div>
+                <div class="designation">
+                    Student
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <nav>
+                <ul>
+                    <li><a href="#">Resume</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Contacts</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+
+    <main>
+        <div class="contact">
+            <div class="title">CONTACT ME</div>
+            <div class="contact-main">
+                <div class="contact-form">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae sapien porttitor,
+                        dignissim
+                        quam sit ame. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae sapien.
+                    </p>
+
+                    <form action="">
+                        <input type="text" placeholder="Name" class="contact-input"><br/>
+                        <input type="text" placeholder="E-mail" class="contact-input"><br/>
+                        <input type="text" placeholder="Subject" class="contact-input"><br/>
+                        <input type="text" placeholder="Message" class="contact-input"><br/>
+                        <input type="submit" value="Send Message" class="contact-submit">
+                    </form>
+                </div>
+                <div id="googleMap" class="map"></div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div>
+            <p>Phone</p>
+            <p><a href="#">123-456-7890</a></p>
+        </div>
+        <div>
+            <p>Email</p>
+            <p><a href="#">info@mysite.com</a></p>
+        </div>
+        <div>
+            <p>Follow Me</p>
+            <img src="images/in.webp" alt="">
+            <img src="images/twitter.webp" alt="">
+        </div>
+        <div>
+            <p></p>
+            <p>
+                © 2023 By Nicol Rider. <br>
+                Proudly created with <a href="#">Wix.com</a>
+            </p>
+        </div>
+    </footer>
+    <script>
+        function myMap() {
+            var mapProp = {
+                center: new google.maps.LatLng(22.73134665950168, 88.33477350384844),
+                zoom: 15,
+            };
+            var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+        }
+    </script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCIwF204lFZg1y4kPSIhKaHEXMLYxxuMhA&callback=myMap"></script>
+</body>
+
+</html>
