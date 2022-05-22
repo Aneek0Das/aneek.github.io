@@ -4,7 +4,6 @@ main .contact{
 }
 
 main .contact .title{
-    margin-top: 100px;
     padding:20px;
     font-size: 30pt;
 }
@@ -22,29 +21,30 @@ main .contact .title{
 
 .contact-input{
     border: none;
-    border-bottom: 2px solid #000;
+    border-bottom: 3px solid #000;
     transition: .5s;
     margin-bottom: 16px;
     font-size: 20px;
     width: 600px;
 }
 .contact-input:hover{
-    border-color: cyan;
+    border-color: var(--primary);
 }
 .contact-input:focus{
     outline: none;
-    border-color: cyan;
+    border-color: var(--primary);
 }
 
 .contact-submit{
     border: none;
-    background-color: #4848e6;
-    color: #fff;
+    background-color: var(--primary);
+    color: var(--text);
     cursor: pointer;
     padding: 16px;
     transition: .5s;
+    border-radius: 5px;
 }
 .contact-submit:hover{
-    background-color: #6e6eff;
-    color: #fff;
+    background-color: var(--light);
+    color: var(--text);
 }
